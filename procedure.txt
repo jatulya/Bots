@@ -1,0 +1,10 @@
+1. Login to your discord account
+2. Create new server
+3. Login to discord developers portal
+4. Create a new Bot
+5. Save its token
+6. Go to OAuth. Click bot and necessary permissions
+    (clicking Administrator would give the bot access to the server which is not suitable)
+7. Copy the url and open it in new tab
+8. Create a new repl in replit. Use the python language
+
