@@ -7,4 +7,5 @@
     (clicking Administrator would give the bot access to the server which is not suitable)
 7. Copy the url and open it in new tab
 8. Create a new repl in replit. Use the python language
-
+9. import discord (repl will automatically install the packages)
+    discord.py works on events
