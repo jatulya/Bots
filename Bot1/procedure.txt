@@ -8,4 +8,7 @@
 7. Copy the url and open it in new tab
 8. Create a new repl in replit. Use the python language
 9. import discord (repl will automatically install the packages)
-    discord.py works on events
+    discord.py works on events. it gives callback function
+10. We are setting such that the messages received on the bot starts with '$'
+11. we save bot token in a secret file and import it using os
+12. use that token to run the bot
