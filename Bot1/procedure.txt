@@ -1,3 +1,4 @@
+STARTING
 1. Login to your discord account
 2. Create new server
 3. Login to discord developers portal
@@ -20,3 +21,10 @@ IMPROVING THE Bot
 3. read the documentation and get quote
 4. Update such that when user sends $inspire, a random quote along with the author name is 
    send back
+5. Now, if user sends a message that has sad word in it, the bot sends a quote back
+6. For that, create a list containing the sad words the bot will be checking 
+7. Create a list of starter encouragement. From one of these, the bot is gonna respond
+   when it is encountered with a sad word. A user can add on to this list later
+
+STORING TO THE REPLIT DATABASE
+1. 

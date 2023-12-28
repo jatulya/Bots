@@ -2,9 +2,16 @@ import discord
 import os
 import requests
 import json
+import random
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
+
+#list of sad words bot will be checking
+sad_words = ['depressed', 'miserbale', 'sad', 'unhappy', 'angry', 'depressing', 'depression', 'gloomy', 'disheartened', 'discouraged']
+
+#bot will be starting with these, user could add more to the list
+start_encouregement = ['Cheer up!', 'Hang in there!', 'You are a great person!']
 
 @client.event
 async def on_ready():  #called when the bot is ready to be used
@@ -31,6 +38,10 @@ async def on_message(msg):
   if msg.content.startswith('$inspire'):
     quote = get_quote()
     await msg.channel.send(quote)
+  
+  #checking if any sad words are in the msg
+  if any(word in msg.content for word in sad_words):
+    await msg.channel.send(random.choice(start_encouregement))
 
 #running the bot
 client.run(os.getenv('BOT1_TOKEN'))
