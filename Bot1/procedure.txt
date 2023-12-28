@@ -12,3 +12,11 @@
 10. We are setting such that the messages received on the bot starts with '$'
 11. we save bot token in a secret file and import it using os
 12. use that token to run the bot
+13. Test the basic bot
+
+IMPROVING THE Bot
+1. import requests -> to get/give http request to APi
+2. import json -> API is going to return the info in a json file
+3. read the documentation and get quote
+4. Update such that when user sends $inspire, a random quote along with the author name is 
+   send back
