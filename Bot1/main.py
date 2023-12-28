@@ -3,6 +3,7 @@ import os
 import requests
 import json
 import random
+from replit import db
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
@@ -25,6 +26,16 @@ def get_quote():
   #a json object contains a datalist with dictionaries with 'q': quote & 'a': author
   quote = json_data[0]['q'] + " -" + json_data[0]['a']
   return(quote)
+
+def update_enc(enc_msg):
+  #checking if thte database has the key 'encouragements'
+  if "encouregement" in db.keys():
+    #storing the values of the key in enc
+    enc = db["encouregement"]
+    #updating the list with the new message
+    enc.append(enc_msg)
+    #storing the updated list back in the db
+    db["encouregement"] = enc
 
 @client.event
 async def on_message(msg):

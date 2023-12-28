@@ -27,4 +27,6 @@ IMPROVING THE Bot
    when it is encountered with a sad word. A user can add on to this list later
 
 STORING TO THE REPLIT DATABASE
-1. 
+1. import db from replit
+2. create a function named update_enc to update the encouraging msg to the db
+
