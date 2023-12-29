@@ -29,4 +29,6 @@ IMPROVING THE Bot
 STORING TO THE REPLIT DATABASE
 1. import db from replit
 2. create a function named update_enc to update the encouraging msg to the db
+3. create a function named del_enc to delete the encouraging msg from the db
+4. Add necessary functions in the client.on_message()
 
