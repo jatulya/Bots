@@ -33,4 +33,12 @@ STORING TO THE REPLIT DATABASE
 4. Add necessary functions in the client.on_message()
 5. Added responding feature and listing
 
+ADDING THE BOT CODE TO THE SERVER
+1. The bot is ready but when our replit tab is closed, it would stop working
+    to keep it running, we have to add the code to a server. We uptime robot for this
+2. Reading the replit documentation for https request. then create a new file and add the code 
+    (importing flask and thread)
+3. import this new file to the main file and call the function return in the new file at main file
+4. After the code is run, we get a url. Copy the url for uptime robot
+
 

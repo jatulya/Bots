@@ -4,6 +4,7 @@ import requests
 import json
 import random
 from replit import db
+from keep_alive import keep_alive
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
@@ -128,5 +129,6 @@ async def on_message(msg):
       await msg.channel.send("Responding is off.")
     
 #running the bot
+keep_alive()
 client.run(os.getenv('BOT1_TOKEN'))
 
